@@ -151,7 +151,7 @@ export const models: Model[] = [
     kind: "sol",
     shots: [
       {
-        src: "/armazones/redondos.webp",
+        src: "/armazones/redondos.webp?v=2",
         alt: "Armazones redondos negros, con lentes de varios colores",
         position: "center 58%",
       },

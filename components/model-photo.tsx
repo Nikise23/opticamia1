@@ -8,10 +8,12 @@ export function ModelPhoto({
   model,
   sizes,
   onCycle,
+  eager = false,
 }: {
   model: Model;
   sizes: string;
   onCycle?: () => void;
+  eager?: boolean;
 }) {
   const [shot, setShot] = useState(0);
   const current = model.shots[shot];
@@ -25,6 +27,7 @@ export function ModelPhoto({
       alt={current.alt}
       fill
       sizes={sizes}
+      loading={eager ? "eager" : "lazy"}
       className="object-cover"
       style={{ objectPosition: current.position ?? "center" }}
     />

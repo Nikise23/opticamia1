@@ -111,6 +111,7 @@ export function Gallery() {
                       model={model}
                       sizes="(min-width: 768px) 280px, 78vw"
                       onCycle={releaseSoon}
+                      eager
                     />
                   </div>
                   <p className="model-name eyebrow mt-4">{model.name}</p>
