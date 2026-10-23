@@ -1,0 +1,280 @@
+export type FrameKind = "receta" | "sol" | "clip";
+
+export type Shot = {
+  src: string;
+  alt: string;
+  position?: string;
+};
+
+export type Model = {
+  id: string;
+  name: string;
+  kind: FrameKind;
+  shots: Shot[];
+};
+
+export const frameFilters = [
+  { id: "todos", label: "Todos" },
+  { id: "receta", label: "Receta" },
+  { id: "sol", label: "Sol" },
+  { id: "clip", label: "Clip" },
+] as const;
+
+export type FrameFilter = (typeof frameFilters)[number]["id"];
+
+export const models: Model[] = [
+  {
+    id: "transparente",
+    name: "Transparente",
+    kind: "receta",
+    shots: [
+      {
+        src: "/armazones/transparente.webp",
+        alt: "Armazón transparente con forma de ojito, sobre fondo rosa",
+        position: "center 58%",
+      },
+    ],
+  },
+  {
+    id: "rosa",
+    name: "Rosa",
+    kind: "receta",
+    shots: [
+      {
+        src: "/armazones/rosa-1.webp",
+        alt: "Armazón transparente rosa, de frente, sobre un estuche estampado",
+        position: "center 62%",
+      },
+      {
+        src: "/armazones/rosa-2.webp",
+        alt: "Mismo armazón rosa, de costado, junto al estuche",
+        position: "center 55%",
+      },
+      {
+        src: "/armazones/rosa-3.webp",
+        alt: "Armazón rosa sobre el estuche, con un anteojo de sol adelante",
+        position: "center 45%",
+      },
+    ],
+  },
+  {
+    id: "metal",
+    name: "Metal",
+    kind: "receta",
+    shots: [
+      {
+        src: "/armazones/metal.webp",
+        alt: "Armazón transparente de metal, con patillas celestes",
+      },
+    ],
+  },
+  {
+    id: "negro",
+    name: "Negro",
+    kind: "clip",
+    shots: [
+      {
+        src: "/armazones/clip.webp",
+        alt: "Anteojos de sol negros y armazón de metal, sostenidos con la mano",
+        position: "center 42%",
+      },
+      {
+        src: "/armazones/negro.webp",
+        alt: "Armazón negro de metal, sostenido con la mano",
+        position: "center 45%",
+      },
+    ],
+  },
+  {
+    id: "hexagonal",
+    name: "Hexagonal",
+    kind: "sol",
+    shots: [
+      {
+        src: "/armazones/hexagonal.webp",
+        alt: "Anteojos de sol con lentes hexagonales",
+        position: "center 22%",
+      },
+    ],
+  },
+  {
+    id: "geometrico",
+    name: "Geométrico",
+    kind: "sol",
+    shots: [
+      {
+        src: "/armazones/geometrico.webp",
+        alt: "Anteojos de sol geométricos, con marco fino",
+        position: "center 28%",
+      },
+    ],
+  },
+  {
+    id: "carey",
+    name: "Sol carey",
+    kind: "sol",
+    shots: [
+      {
+        src: "/armazones/carey.webp",
+        alt: "Anteojos de sol oscuros con marco carey",
+        position: "68% 28%",
+      },
+    ],
+  },
+  {
+    id: "deportivo",
+    name: "Deportivo",
+    kind: "sol",
+    shots: [
+      {
+        src: "/armazones/deportivo.webp",
+        alt: "Anteojos de sol deportivos, negros, con lentes envolventes",
+        position: "center 38%",
+      },
+    ],
+  },
+  {
+    id: "mascara",
+    name: "Máscara",
+    kind: "sol",
+    shots: [
+      {
+        src: "/armazones/mascara.webp",
+        alt: "Anteojos de sol negros tipo máscara, de una sola lente",
+        position: "center 40%",
+      },
+    ],
+  },
+  {
+    id: "redondos",
+    name: "Redondos",
+    kind: "sol",
+    shots: [
+      {
+        src: "/armazones/redondos.webp",
+        alt: "Armazones redondos negros, con lentes de varios colores",
+        position: "center 58%",
+      },
+    ],
+  },
+  {
+    id: "ambar",
+    name: "Ámbar",
+    kind: "sol",
+    shots: [
+      {
+        src: "/armazones/ambar.webp",
+        alt: "Anteojos de sol cuadrados, color ámbar, junto a un pañuelo",
+        position: "center 68%",
+      },
+    ],
+  },
+  {
+    id: "dorado",
+    name: "Dorado",
+    kind: "receta",
+    shots: [
+      {
+        src: "/armazones/dorado.webp",
+        alt: "Armazón dorado fino, puesto al aire libre",
+        position: "center 30%",
+      },
+    ],
+  },
+  {
+    id: "acero",
+    name: "Acero",
+    kind: "receta",
+    shots: [
+      {
+        src: "/armazones/acero.webp",
+        alt: "Dos armazones de metal, uno verde agua y otro azul",
+        position: "center 48%",
+      },
+    ],
+  },
+  {
+    id: "chico",
+    name: "Chico",
+    kind: "sol",
+    shots: [
+      {
+        src: "/armazones/chico.webp",
+        alt: "Anteojos de sol chicos, de marco dorado",
+        position: "center 32%",
+      },
+    ],
+  },
+  {
+    id: "rosado",
+    name: "Rosado",
+    kind: "receta",
+    shots: [
+      {
+        src: "/armazones/rosado.webp",
+        alt: "Armazón grande color rosa, de marco fino",
+        position: "center 24%",
+      },
+    ],
+  },
+  {
+    id: "doble",
+    name: "Doble",
+    kind: "clip",
+    shots: [
+      {
+        src: "/armazones/doble.webp",
+        alt: "Anteojos de sol negros sobre un armazón de metal",
+        position: "center 40%",
+      },
+    ],
+  },
+  {
+    id: "conductor",
+    name: "Conductor",
+    kind: "sol",
+    shots: [
+      {
+        src: "/armazones/conductor.webp",
+        alt: "Anteojos de sol con lentes ámbar, puestos en el auto",
+        position: "center 32%",
+      },
+    ],
+  },
+  {
+    id: "agua",
+    name: "Verde agua",
+    kind: "receta",
+    shots: [
+      {
+        src: "/armazones/agua.webp",
+        alt: "Armazón de metal color verde agua",
+        position: "center 48%",
+      },
+    ],
+  },
+  {
+    id: "azul",
+    name: "Azul espejado",
+    kind: "sol",
+    shots: [
+      {
+        src: "/armazones/azul.webp",
+        alt: "Anteojos de sol con lentes azules espejadas, en el local",
+        position: "center 28%",
+      },
+    ],
+  },
+  {
+    id: "redondo",
+    name: "Redondo",
+    kind: "receta",
+    shots: [
+      {
+        src: "/armazones/redondo.webp",
+        alt: "Armazón redondo negro, sostenido con la mano",
+        position: "center 42%",
+      },
+    ],
+  },
+];

@@ -1,0 +1,50 @@
+---
+description: Sistema visual de Óptica Mía — color, tipo, motivo gráfico y profundidad
+alwaysApply: true
+---
+
+# Sistema de diseño
+
+Usá solo estos tokens. No inventes hex, ni variantes, ni grises intermedios.
+
+```css
+:root {
+  --navy: #16263B;
+  --orange: #FF6F0F;   /* acento único; máx. ~10% de la superficie visible */
+  --cream: #F6F0E6;
+  --cream-2: #EDE5D8;
+}
+```
+
+- Fondo de página: `--cream` o `--navy`. Bloques alternados: `--cream` / `--cream-2`.
+- `--orange` solo en una palabra clave, un arco, un link o un botón. Si el naranja ocupa más de ~10% de la sección, reducilo.
+- Prohibido: negro puro, blanco puro, grises, gradientes y cualquier color fuera de los cuatro tokens.
+
+## Tipografía
+
+- Una sola sans geométrica de Google Fonts: **Jost**, **Outfit** o **Urbanist**. Cargala con `preconnect` y pesos 300, 400 y 700.
+- Titulares: peso 300 o 400. Una sola palabra clave del titular en peso 700 y color `--orange`.
+- Eyebrows y eslogan: `letter-spacing` entre `0.12em` y `0.2em`, en mayúsculas, tamaño chico.
+- Prohibido como fuente de display: Inter, Roboto, Arial, `system-ui`.
+
+Escala fluida con `clamp()` y mucho aire vertical. Ejemplo:
+
+```css
+h1 { font-size: clamp(2.75rem, 6vw, 5.5rem); font-weight: 300; line-height: 1.05; }
+h2 { font-size: clamp(2rem, 4vw, 3.25rem); font-weight: 300; }
+.eyebrow { font-size: 0.75rem; letter-spacing: 0.16em; text-transform: uppercase; }
+section { padding-block: clamp(4.5rem, 10vw, 8rem); }
+```
+
+## Motivo gráfico
+
+- Motivo de marca: un círculo o lente, más arcos concéntricos (un trazo grueso `--navy` y un trazo fino `--orange`).
+- Fotos siempre con máscara circular u ovalada (`border-radius: 50%` o un óvalo). Sin fotos rectangulares a sangre.
+- Reutilizá el mismo motivo en hero, separadores y detalles. No sumes ilustraciones ajenas al círculo y al arco.
+
+## Profundidad e iconos
+
+- Profundidad por contraste de color (navy sobre cream, cream sobre navy) y líneas de `1px` a `1.5px`.
+- Prohibido: `box-shadow` amplio, sombras difusas, glassmorphism, blur de fondo y bordes gruesos.
+- Iconos: solo Lucide, trazo fino (`stroke-width` 1.25–1.5). Un solo set en toda la página.
+- Cero emojis en la UI, incluidos títulos, botones, listas y estados vacíos.

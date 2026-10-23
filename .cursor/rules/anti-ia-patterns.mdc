@@ -1,0 +1,28 @@
+---
+description: Patrones visuales y de contenido vetados; revisión obligatoria antes de entregar cada sección
+alwaysApply: true
+---
+
+# Patrones vetados
+
+Antes de dar por terminada cada sección, recorré esta lista. Si la sección cae en alguno, rehacela.
+
+| Vetado | Qué hacer en su lugar |
+|---|---|
+| Hero centrado con gradiente | Composición asimétrica sobre `--cream` o `--navy` plano. Sin `linear-gradient`. |
+| Grilla de 3 cards con icono dentro de un círculo | Otra estructura: lista, dos columnas, o una fila editorial. El círculo es motivo de marca, no contenedor de icono. |
+| `border-radius: 16px` (o más) en todo | Esquinas rectas o radios mínimos (`2px`–`4px`). El redondo se reserva a máscaras de imagen y al motivo de lente. |
+| "Welcome to…", "Bienvenido a…" | Entrá directo al oficio. Primera frase concreta, en voseo. |
+| Sparkles, ✨, estrellitas decorativas | Sin iconos de brillo. Acento solo con `--orange` y el arco fino. |
+| Stock photos genéricas | Fotos propias o recortes con máscara circular/oval. Si no hay foto real, no inventes una de banco. |
+| Testimonios o precios inventados | No escribas reseñas, estrellas, "$" ni planes que el cliente no haya dado. |
+| Texto gris `#666` (o similar) sobre blanco | Texto `--navy` sobre `--cream` / `--cream-2`, o `--cream` sobre `--navy`. |
+| Animación en cada elemento | Máximo 2–3 momentos en toda la página (ver `motion-and-copy`). El resto estático. |
+| Lorem ipsum o texto de relleno | Copy real en español rioplatense, aunque sea corto. |
+
+## Chequeo al cerrar una sección
+
+1. ¿Hay gradiente, card triple, radio grande o emoji? Sacalo.
+2. ¿Hay un dato (precio, cita, porcentaje, años) que no vino del brief? Borralo.
+3. ¿El naranja pasa de ~10% de la superficie? Bajalo a una palabra, un arco o un botón.
+4. ¿La sección se podría publicar en cualquier óptica genérica? Reescribila hasta que sea específica.

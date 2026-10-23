@@ -1,0 +1,38 @@
+---
+description: Movimiento FOCO, copy en voseo rioplatense y accesibilidad AA
+alwaysApply: true
+---
+
+# Movimiento
+
+Concepto **FOCO**: lo importante entra de blur a nítido. Aplicalo solo en el hero y en los títulos de sección.
+
+- En toda la página, como máximo **2 o 3** momentos animados (por ejemplo: hero, un título al entrar en vista, y el motivo de arcos). El resto queda quieto.
+- Easing único: `cubic-bezier(0.22, 1, 0.36, 1)`.
+- Duración entre **400ms y 900ms**. Sin bounce, sin loops infinitos, sin stagger en cada hijo.
+
+```css
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation: none !important;
+    transition: none !important;
+  }
+}
+```
+
+Con `prefers-reduced-motion: reduce`, el contenido aparece ya nítido. No ocultar texto que el usuario no va a ver animarse.
+
+# Copy
+
+- Español rioplatense, con voseo: "mirá", "elegí", "tu turno". Sin "tú" ni "usted" mezclados.
+- Frases cortas. Un idea por oración. Titulares que se leen en voz alta sin trabarse.
+- Prohibido: "líderes en", "tu visión es nuestra misión", "calidad y confianza", "soluciones integrales", "pasión por lo que hacemos", "bienvenido a".
+- No inventes años de trayectoria, premios, testimonios ni precios.
+
+# Accesibilidad
+
+- Contraste mínimo **WCAG AA**: texto `--navy` sobre `--cream` o `--cream-2`; texto `--cream` sobre `--navy`.
+- `--orange` (`#FF6F0F`) no va en texto chico ni sobre cream. Solo en texto grande (titular, una palabra) o sobre `--navy`.
+- Foco de teclado visible: `outline` de `1.5px` en `--navy` o `--orange`, con offset. No lo borres en botones ni links.
+- Un solo `<h1>` por página. Las secciones siguientes usan `<h2>`.
+- Imágenes con `alt` concreto. Iconos decorativos con `aria-hidden="true"`.
