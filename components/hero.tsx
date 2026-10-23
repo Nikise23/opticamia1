@@ -2,6 +2,7 @@
 
 import { motion, useReducedMotion } from "framer-motion";
 import { ArcPair } from "@/components/arcs";
+import { SocialModal } from "@/components/social-modal";
 import { focusEase } from "@/lib/motion";
 import { site } from "@/lib/site";
 
@@ -39,14 +40,8 @@ export function Hero() {
         <p className="mt-8 max-w-[34ch] text-lg leading-snug md:text-xl">
           Anteojos de receta, de sol y ajustes. En Julio A. Roca 720, San Miguel.
         </p>
-        <div className="mt-10 flex flex-wrap gap-3">
-          <a className="btn btn-primary" href={site.whatsapp} target="_blank" rel="noreferrer">
-            Sacá tu turno
-            <span className="sr-only"> por WhatsApp</span>
-          </a>
-          <a className="btn btn-ghost" href="#visitanos">
-            Cómo llegar
-          </a>
+        <div className="mt-10">
+          <SocialModal />
         </div>
       </div>
 

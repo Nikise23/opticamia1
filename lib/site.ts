@@ -13,6 +13,8 @@ export const site = {
     "https://wa.me/5491133286907?text=Hola%20%C3%93ptica%20M%C3%ADa%2C%20quisiera%20consultar...",
   instagram: "https://www.instagram.com/opticamia1/",
   instagramHandle: "@opticamia1",
+  tiktok: "https://www.tiktok.com/@opticamia1",
+  tiktokHandle: "@opticamia1",
   address: {
     street: "Julio A. Roca 720",
     postalCode: "B1663",
