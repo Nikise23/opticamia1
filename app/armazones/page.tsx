@@ -12,11 +12,11 @@ const description =
 export const metadata: Metadata = {
   title,
   description,
-  alternates: { canonical: "/armazones" },
+  alternates: { canonical: "/armazones/" },
   openGraph: {
     type: "website",
     locale: "es_AR",
-    url: "/armazones",
+    url: "/armazones/",
     siteName: site.name,
     title,
     description,
@@ -33,7 +33,7 @@ const itemList = {
     "@type": "ListItem",
     position: index + 1,
     name: model.name,
-    url: `${siteUrl}/armazones#${model.id}`,
+    url: `${siteUrl}/armazones/#${model.id}`,
   })),
 };
 
@@ -42,7 +42,7 @@ const breadcrumb = {
   "@type": "BreadcrumbList",
   itemListElement: [
     { "@type": "ListItem", position: 1, name: "Inicio", item: siteUrl },
-    { "@type": "ListItem", position: 2, name: "Armazones", item: `${siteUrl}/armazones` },
+    { "@type": "ListItem", position: 2, name: "Armazones", item: `${siteUrl}/armazones/` },
   ],
 };
 

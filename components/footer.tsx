@@ -10,10 +10,10 @@ export function Footer() {
       <div className="wrap relative flex flex-col gap-8 py-16 pb-28 md:pb-16">
         <Logo />
         <nav className="flex flex-wrap gap-x-6 gap-y-2" aria-label="Páginas">
-          <a className="inline-flex min-h-11 items-center underline decoration-1 underline-offset-4" href="/armazones">
+          <a className="inline-flex min-h-11 items-center underline decoration-1 underline-offset-4" href="/armazones/">
             Armazones
           </a>
-          <a className="inline-flex min-h-11 items-center underline decoration-1 underline-offset-4" href="/visitanos">
+          <a className="inline-flex min-h-11 items-center underline decoration-1 underline-offset-4" href="/visitanos/">
             Visitanos
           </a>
         </nav>

@@ -9,11 +9,11 @@ const description = `${site.name} en ${fullAddress}. Lunes a viernes por la tard
 export const metadata: Metadata = {
   title,
   description,
-  alternates: { canonical: "/visitanos" },
+  alternates: { canonical: "/visitanos/" },
   openGraph: {
     type: "website",
     locale: "es_AR",
-    url: "/visitanos",
+    url: "/visitanos/",
     siteName: site.name,
     title,
     description,
@@ -26,7 +26,7 @@ const breadcrumb = {
   "@type": "BreadcrumbList",
   itemListElement: [
     { "@type": "ListItem", position: 1, name: "Inicio", item: siteUrl },
-    { "@type": "ListItem", position: 2, name: "Visitanos", item: `${siteUrl}/visitanos` },
+    { "@type": "ListItem", position: 2, name: "Visitanos", item: `${siteUrl}/visitanos/` },
   ],
 };
 

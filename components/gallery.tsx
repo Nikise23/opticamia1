@@ -81,7 +81,7 @@ export function Gallery() {
         />
         <p className="mt-6 max-w-[36ch]">
           Algunos modelos del local. Si te gusta uno, consultalo. El catálogo completo está en{" "}
-          <a className="underline decoration-1 underline-offset-4" href="/armazones">
+          <a className="underline decoration-1 underline-offset-4" href="/armazones/">
             Armazones
           </a>
           .

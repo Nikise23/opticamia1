@@ -40,8 +40,8 @@ export const mapsEmbed = `https://maps.google.com/maps?q=${mapsQuery}&hl=es&z=17
 export const nav = [
   { href: "/#servicios", label: "Servicios" },
   { href: "/#proceso", label: "Proceso" },
-  { href: "/armazones", label: "Armazones" },
-  { href: "/visitanos", label: "Visitanos" },
+  { href: "/armazones/", label: "Armazones" },
+  { href: "/visitanos/", label: "Visitanos" },
 ] as const;
 
 export const hours = [
