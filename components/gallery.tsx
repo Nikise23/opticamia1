@@ -8,6 +8,8 @@ import { ModelPhoto } from "@/components/model-photo";
 import { models } from "@/lib/models";
 import { modelWhatsapp } from "@/lib/site";
 
+const preview = models.slice(-30);
+
 export function Gallery() {
   const trackRef = useRef<HTMLUListElement>(null);
   const indexRef = useRef(0);
@@ -18,7 +20,7 @@ export function Gallery() {
 
   const go = useCallback((next: number) => {
     const track = trackRef.current;
-    const normalized = (next + models.length) % models.length;
+    const normalized = (next + preview.length) % preview.length;
     const item = track?.children[normalized] as HTMLElement | undefined;
     if (!track || !item) return;
     const motionOff = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
@@ -93,7 +95,7 @@ export function Gallery() {
           aria-label="Armazones del local"
         >
           <ul ref={trackRef} className="gallery-track" onScroll={onScroll}>
-            {models.map((model) => (
+            {preview.map((model) => (
               <li key={model.id}>
                 <div
                   className="model-slide"
@@ -145,7 +147,7 @@ export function Gallery() {
               <ChevronRight strokeWidth={1.5} aria-hidden="true" />
             </button>
             <p className="eyebrow ml-2">
-              {String(index + 1).padStart(2, "0")} / {String(models.length).padStart(2, "0")}
+              {String(index + 1).padStart(2, "0")} / {String(preview.length).padStart(2, "0")}
             </p>
           </div>
         </div>

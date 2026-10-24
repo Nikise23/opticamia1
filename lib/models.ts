@@ -277,4 +277,188 @@ export const models: Model[] = [
       },
     ],
   },
+  {
+    id: "rojo",
+    name: "Rojo",
+    kind: "sol",
+    shots: [
+      {
+        src: "/armazones/rojo-1.webp",
+        alt: "Anteojos de sol negros con lentes rojos, de costado",
+        position: "center 55%",
+      },
+      {
+        src: "/armazones/rojo-2.webp",
+        alt: "Los mismos anteojos de sol con lentes rojos, desde arriba",
+        position: "center 48%",
+      },
+    ],
+  },
+  {
+    id: "lima",
+    name: "Lima",
+    kind: "receta",
+    shots: [
+      {
+        src: "/armazones/lima-1.webp",
+        alt: "Armazón de metal gris con patillas lima",
+        position: "center 55%",
+      },
+      {
+        src: "/armazones/lima-2.webp",
+        alt: "El mismo armazón lima, más de cerca",
+        position: "center 52%",
+      },
+    ],
+  },
+  {
+    id: "marino",
+    name: "Marino",
+    kind: "receta",
+    shots: [
+      {
+        src: "/armazones/marino.webp",
+        alt: "Armazón azul marino, de acetato, con forma redondeada",
+        position: "center 55%",
+      },
+    ],
+  },
+  {
+    id: "puente",
+    name: "Puente",
+    kind: "receta",
+    shots: [
+      {
+        src: "/armazones/puente-1.webp",
+        alt: "Dos armazones de metal con doble puente, uno negro y uno gris",
+        position: "center 58%",
+      },
+      {
+        src: "/armazones/puente-2.webp",
+        alt: "Los mismos armazones de doble puente, desde otro ángulo",
+        position: "center 55%",
+      },
+    ],
+  },
+  {
+    id: "lila",
+    name: "Lila",
+    kind: "receta",
+    shots: [
+      {
+        src: "/armazones/lila.webp",
+        alt: "Armazón transparente color lila, de acetato",
+        position: "center 55%",
+      },
+    ],
+  },
+  {
+    id: "carey-ojito",
+    name: "Carey",
+    kind: "receta",
+    shots: [
+      {
+        src: "/armazones/carey-ojito.webp",
+        alt: "Armazón carey con forma de ojito",
+        position: "center 55%",
+      },
+    ],
+  },
+  {
+    id: "beige",
+    name: "Beige",
+    kind: "receta",
+    shots: [
+      {
+        src: "/armazones/beige-1.webp",
+        alt: "Armazón beige con forma de ojito, de costado",
+        position: "center 55%",
+      },
+      {
+        src: "/armazones/beige-2.webp",
+        alt: "El mismo armazón beige, de frente",
+        position: "center 62%",
+      },
+    ],
+  },
+  {
+    id: "miel",
+    name: "Miel",
+    kind: "receta",
+    shots: [
+      {
+        src: "/armazones/miel-1.webp",
+        alt: "Armazón color miel con forma de ojito, de frente",
+        position: "center 62%",
+      },
+      {
+        src: "/armazones/miel-2.webp",
+        alt: "El mismo armazón miel, de costado",
+        position: "center 55%",
+      },
+    ],
+  },
+  {
+    id: "nylon",
+    name: "Nylon",
+    kind: "receta",
+    shots: [
+      {
+        src: "/armazones/nylon-1.webp",
+        alt: "Dos armazones redondos de nylon, uno oscuro y uno traslúcido",
+        position: "center 58%",
+      },
+      {
+        src: "/armazones/nylon-2.webp",
+        alt: "Los mismos armazones redondos, desde otro ángulo",
+        position: "center 55%",
+      },
+    ],
+  },
+  {
+    id: "al-aire",
+    name: "Al aire",
+    kind: "receta",
+    shots: [
+      {
+        src: "/armazones/alaire-1.webp",
+        alt: "Dos armazones al aire, de metal, uno plateado y uno oscuro",
+        position: "center 55%",
+      },
+      {
+        src: "/armazones/alaire-2.webp",
+        alt: "Los mismos armazones al aire, desde otro ángulo",
+        position: "center 52%",
+      },
+    ],
+  },
+  {
+    id: "sol-redondo",
+    name: "Sol redondo",
+    kind: "sol",
+    shots: [
+      {
+        src: "/armazones/sol-redondo.webp",
+        alt: "Anteojos de sol redondos, de metal negro",
+        position: "center 55%",
+      },
+    ],
+  },
+  {
+    id: "polarizado",
+    name: "Polarizado",
+    kind: "sol",
+    shots: [
+      {
+        src: "/armazones/polarizado-1.webp",
+        alt: "Armazón carey y anteojos de sol polarizados, juntos",
+        position: "center 62%",
+      },
+      {
+        src: "/armazones/polarizado-2.webp",
+        alt: "Anteojos de sol carey polarizados, de costado",
+        position: "center 55%",
+      },
+    ],
+  },
 ];
