@@ -295,59 +295,59 @@ export const models: Model[] = [
     ],
   },
   {
-    id: "lima",
-    name: "Lima",
+    id: "gasoil-metal",
+    name: "Gasoil Metal (Lima)",
     kind: "receta",
     shots: [
       {
         src: "/armazones/lima-1.webp",
-        alt: "Armazón de metal gris con patillas lima",
+        alt: "Armazón Gasoil de metal gris, con patillas lima",
         position: "center 55%",
       },
       {
         src: "/armazones/lima-2.webp",
-        alt: "El mismo armazón lima, más de cerca",
+        alt: "El mismo Gasoil Metal lima, más de cerca",
         position: "center 52%",
       },
     ],
   },
   {
-    id: "marino",
-    name: "Marino",
+    id: "usual",
+    name: "Usual",
     kind: "receta",
     shots: [
       {
         src: "/armazones/marino.webp",
-        alt: "Armazón azul marino, de acetato, con forma redondeada",
+        alt: "Armazón Usual azul marino, de acetato, con forma redondeada",
         position: "center 55%",
       },
     ],
   },
   {
     id: "puente",
-    name: "Puente",
+    name: "Puente (Señal)",
     kind: "receta",
     shots: [
       {
         src: "/armazones/puente-1.webp",
-        alt: "Dos armazones de metal con doble puente, uno negro y uno gris",
+        alt: "Dos armazones Señal con doble puente, uno negro y uno gris",
         position: "center 58%",
       },
       {
         src: "/armazones/puente-2.webp",
-        alt: "Los mismos armazones de doble puente, desde otro ángulo",
+        alt: "Los mismos armazones Señal de doble puente, desde otro ángulo",
         position: "center 55%",
       },
     ],
   },
   {
-    id: "lila",
-    name: "Lila",
+    id: "gasoil-transparente",
+    name: "Gasoil Transparente",
     kind: "receta",
     shots: [
       {
         src: "/armazones/lila.webp",
-        alt: "Armazón transparente color lila, de acetato",
+        alt: "Armazón Gasoil transparente, color lila",
         position: "center 55%",
       },
     ],
@@ -445,19 +445,51 @@ export const models: Model[] = [
     ],
   },
   {
-    id: "polarizado",
-    name: "Polarizado",
-    kind: "sol",
+    id: "clip-carey",
+    name: "Clip carey",
+    kind: "clip",
     shots: [
       {
         src: "/armazones/polarizado-1.webp",
-        alt: "Armazón carey y anteojos de sol polarizados, juntos",
+        alt: "Clip carey: armazón de receta y sol polarizado, juntos",
         position: "center 62%",
       },
       {
         src: "/armazones/polarizado-2.webp",
-        alt: "Anteojos de sol carey polarizados, de costado",
+        alt: "El clip de sol carey polarizado, de costado",
         position: "center 55%",
+      },
+    ],
+  },
+  {
+    id: "clip-tira",
+    name: "Clip con tira",
+    kind: "clip",
+    shots: [
+      {
+        src: "/armazones/clip-tira-1.webp",
+        alt: "Clip de receta y sol, negro, con las patillas abiertas",
+        position: "center 62%",
+      },
+      {
+        src: "/armazones/clip-tira-2.webp",
+        alt: "El mismo clip, con el sol separado del armazón",
+        position: "center 50%",
+      },
+      {
+        src: "/armazones/clip-tira-3.webp",
+        alt: "La tira del clip, abrochada atrás para usarlo al hacer deporte",
+        position: "center 32%",
+      },
+      {
+        src: "/armazones/clip-tira-4.webp",
+        alt: "El clip armado, de costado",
+        position: "center 40%",
+      },
+      {
+        src: "/armazones/clip-tira-5.webp",
+        alt: "El clip armado, en tres cuartos",
+        position: "center 48%",
       },
     ],
   },
