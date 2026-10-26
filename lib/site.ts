@@ -1,5 +1,5 @@
 export const siteUrl =
-  process.env.NEXT_PUBLIC_SITE_URL ?? "https://opticamia.com.ar";
+  process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.opticamia.com.ar";
 
 export const copyrightYear = new Date().getFullYear();
 

@@ -8,4 +8,4 @@ services:
       - key: NODE_VERSION
         value: "20"
       - key: NEXT_PUBLIC_SITE_URL
-        value: https://opticamia.com.ar
+        value: https://www.opticamia.com.ar
